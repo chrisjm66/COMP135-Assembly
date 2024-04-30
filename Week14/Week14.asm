@@ -15,10 +15,16 @@ INCLUDE Irvine32.inc
 	rownum BYTE ?
 	colnum BYTE ?
 	showme BYTE ?
+	
+	comma BYTE ","
+	space BYTE " "
+	prompt3 BYTE "Enter a name: ",0
+	nameArray BYTE 40 DUP(0)
+	firstName BYTE 40 DUP(0)
 .code
 
 main PROC
-	call multidarray
+	call nameSwap
 	exit
 main ENDP
 
@@ -54,10 +60,8 @@ multiDArray PROC
 	ret
 multiDArray ENDP
 
-bubbleSort PROC
-	ret
-bubbleSort ENDP
 
+; lab 2
 pass PROC uses ecx
 	mov ecx, lengthof array2 - 1
 	mov eax, 0
@@ -80,4 +84,51 @@ swap PROC
 	mov [edi], al
 	ret
 swap ENDP
+
+disp PROC uses ecx
+	mov ecx, lengthof array2
+	mov esi, offset array2
+tDisp:
+	movzx eax, BYTE PTR [esi]
+	call writeint
+	inc esi
+	loop tDisp
+	ret
+disp ENDP
+
+; lab 3
+nameSwap PROC
+	mov edx, offset prompt3
+	call writestring
+	mov edx, offset nameArray
+	mov ecx, lengthof nameArray
+	call readstring
+	mov ecx, eax ; how many entered?
+	mov ebx, eax
+	mov esi, 0
+top:
+	mov al, nameArray[esi]
+	cmp al, space
+	je lastName
+	mov firstName[esi], al
+	inc esi
+	loop top
+lastName:
+	
+	dec ecx
+top2:
+	inc esi ; skip the space
+	mov al, nameArray[esi]
+	call writeChar
+	loop top2
+writeFirstName:
+	mov al, comma
+	call writechar
+	mov al, space
+	call writechar
+	
+	mov edx, offset firstname
+	call writeString
+	ret
+nameSwap ENDP
 END main
