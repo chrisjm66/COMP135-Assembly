@@ -1,0 +1,86 @@
+ ManganHW5
+
+ Timestamp is 660c427d (Tue Apr 02 13:38:05 2024)
+
+ Preferred load address is 00400000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00001c68H .text                   CODE
+ 0002:00000000 00000121H .rdata                  DATA
+ 0002:00000121 00000000H .edata                  DATA
+ 0003:00000000 00000e08H .data                   DATA
+ 0003:00000e08 00000224H .bss                    DATA
+ 0004:00000000 00000014H .idata$2                DATA
+ 0004:00000014 00000014H .idata$3                DATA
+ 0004:00000028 0000006cH .idata$4                DATA
+ 0004:00000094 0000006cH .idata$5                DATA
+ 0004:00000100 0000022dH .idata$6                DATA
+
+  Address         Publics by Value              Rva+Base     Lib:Object
+
+ 0001:0000001c       _main@0                    0040101c f   ManganHW5.obj
+ 0001:00000037       _runInputLoop@0            00401037 f   ManganHW5.obj
+ 0001:00000060       _ClrScr@0                  00401060 f   irvine32:Irvine32.obj
+ 0001:000000af       _Crlf@0                    004010af f   irvine32:Irvine32.obj
+ 0001:000000cc       _Delay@0                   004010cc f   irvine32:Irvine32.obj
+ 0001:000000d5       _DumpMem@0                 004010d5 f   irvine32:Irvine32.obj
+ 0001:000001a5       _DumpRegs@0                004011a5 f   irvine32:Irvine32.obj
+ 0001:00000381       _GetCommandTail@0          00401381 f   irvine32:Irvine32.obj
+ 0001:00000397       _GetDateTime@4             00401397 f   irvine32:Irvine32.obj
+ 0001:000003c7       _GetMseconds@0             004013c7 f   irvine32:Irvine32.obj
+ 0001:00000420       _Gotoxy@0                  00401420 f   irvine32:Irvine32.obj
+ 0001:00000456       _IsDigit@0                 00401456 f   irvine32:Irvine32.obj
+ 0001:00000463       _RandomRange@0             00401463 f   irvine32:Irvine32.obj
+ 0001:0000047f       _Random32@0                0040147f f   irvine32:Irvine32.obj
+ 0001:0000049a       _Randomize@0               0040149a f   irvine32:Irvine32.obj
+ 0001:000004b3       _ReadChar@0                004014b3 f   irvine32:Irvine32.obj
+ 0001:00000510       _ReadHex@0                 00401510 f   irvine32:Irvine32.obj
+ 0001:00000570       _ReadInt@0                 00401570 f   irvine32:Irvine32.obj
+ 0001:0000062d       _ReadString@0              0040162d f   irvine32:Irvine32.obj
+ 0001:00000693       _SetTextColor@0            00401693 f   irvine32:Irvine32.obj
+ 0001:000006b8       _Str_compare@8             004016b8 f   irvine32:Irvine32.obj
+ 0001:000006e2       _Str_copy@8                004016e2 f   irvine32:Irvine32.obj
+ 0001:00000705       _Str_length@4              00401705 f   irvine32:Irvine32.obj
+ 0001:0000071f       _Str_trim@8                0040171f f   irvine32:Irvine32.obj
+ 0001:0000074c       _Str_ucase@4               0040174c f   irvine32:Irvine32.obj
+ 0001:0000076e       _WaitMsg@0                 0040176e f   irvine32:Irvine32.obj
+ 0001:000007c7       _WriteBin@0                004017c7 f   irvine32:Irvine32.obj
+ 0001:000007fb       _WriteChar@0               004017fb f   irvine32:Irvine32.obj
+ 0001:0000082a       _WriteDec@0                0040182a f   irvine32:Irvine32.obj
+ 0001:0000086b       _WriteHex@0                0040186b f   irvine32:Irvine32.obj
+ 0001:000008c2       _WriteInt@0                004018c2 f   irvine32:Irvine32.obj
+ 0001:00000923       _WriteString@0             00401923 f   irvine32:Irvine32.obj
+ 0001:000009b0       _ExitProcess@4             004019b0 f   kernel32:KERNEL32.dll
+ 0001:000009b6       _FlushConsoleInputBuffer@4 004019b6 f   kernel32:KERNEL32.dll
+ 0001:000009bc       _GetCommandLineA@0         004019bc f   kernel32:KERNEL32.dll
+ 0001:000009c2       _GetConsoleMode@8          004019c2 f   kernel32:KERNEL32.dll
+ 0001:000009c8       _GetLocalTime@4            004019c8 f   kernel32:KERNEL32.dll
+ 0001:000009ce       _GetStdHandle@4            004019ce f   kernel32:KERNEL32.dll
+ 0001:000009d4       _GetSystemTime@4           004019d4 f   kernel32:KERNEL32.dll
+ 0001:000009da       _ReadConsoleA@20           004019da f   kernel32:KERNEL32.dll
+ 0001:000009e0       _SetConsoleCursorPosition@8 004019e0 f   kernel32:KERNEL32.dll
+ 0001:000009e6       _SetConsoleMode@8          004019e6 f   kernel32:KERNEL32.dll
+ 0001:000009ec       _SetConsoleTextAttribute@8 004019ec f   kernel32:KERNEL32.dll
+ 0001:000009f2       _Sleep@4                   004019f2 f   kernel32:KERNEL32.dll
+ 0001:000009f8       _SystemTimeToFileTime@8    004019f8 f   kernel32:KERNEL32.dll
+ 0001:000009fe       _WriteConsoleA@20          004019fe f   kernel32:KERNEL32.dll
+ 0004:00000000       __IMPORT_DESCRIPTOR_KERNEL32 00406000     kernel32:KERNEL32.dll
+ 0004:00000014       __NULL_IMPORT_DESCRIPTOR   00406014     kernel32:KERNEL32.dll
+ 0004:00000094       __imp__ExitProcess@4       00406094     kernel32:KERNEL32.dll
+ 0004:00000098       __imp__FlushConsoleInputBuffer@4 00406098     kernel32:KERNEL32.dll
+ 0004:0000009c       __imp__GetCommandLineA@0   0040609c     kernel32:KERNEL32.dll
+ 0004:000000a0       __imp__GetConsoleMode@8    004060a0     kernel32:KERNEL32.dll
+ 0004:000000a4       __imp__GetLocalTime@4      004060a4     kernel32:KERNEL32.dll
+ 0004:000000a8       __imp__GetStdHandle@4      004060a8     kernel32:KERNEL32.dll
+ 0004:000000ac       __imp__GetSystemTime@4     004060ac     kernel32:KERNEL32.dll
+ 0004:000000b0       __imp__ReadConsoleA@20     004060b0     kernel32:KERNEL32.dll
+ 0004:000000b4       __imp__SetConsoleCursorPosition@8 004060b4     kernel32:KERNEL32.dll
+ 0004:000000b8       __imp__SetConsoleMode@8    004060b8     kernel32:KERNEL32.dll
+ 0004:000000bc       __imp__SetConsoleTextAttribute@8 004060bc     kernel32:KERNEL32.dll
+ 0004:000000c0       __imp__Sleep@4             004060c0     kernel32:KERNEL32.dll
+ 0004:000000c4       __imp__SystemTimeToFileTime@8 004060c4     kernel32:KERNEL32.dll
+ 0004:000000c8       __imp__WriteConsoleA@20    004060c8     kernel32:KERNEL32.dll
+ 0004:000000cc       \177KERNEL32_NULL_THUNK_DATA 004060cc     kernel32:KERNEL32.dll
+
+ entry point at        0001:0000001c
+

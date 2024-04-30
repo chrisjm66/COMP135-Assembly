@@ -1,0 +1,18 @@
+ varTest
+
+ Timestamp is 65d50136 (Tue Feb 20 14:44:54 2024)
+
+ Preferred load address is 00400000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000100dH .text                   CODE
+ 0002:00000000 00000121H .rdata                  DATA
+ 0002:00000121 00000000H .edata                  DATA
+ 0003:00000000 00000118H .data                   DATA
+
+  Address         Publics by Value              Rva+Base     Lib:Object
+
+ 0001:00000010       _main@0                    00401010 f   varTest.obj
+
+ entry point at        0001:00000010
+
